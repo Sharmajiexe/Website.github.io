@@ -24,7 +24,7 @@ html{
 header{
     background: var(--dark);
     clip-path:polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
-    
+
 }
 .container{
     max-width:1152px;
@@ -68,9 +68,11 @@ header nav{
     padding:2rem 0;
 
 }
-header nav .branding{
-    margin-right:3rem;
-}
+/* header nav .branding{
+    /* margin-right:3rem;
+    width:110px;
+    height:110px; 
+} */
 .hero{
     padding:3rem 0;
 }
@@ -121,8 +123,10 @@ section.about h3{
     font-weight:400;
 }
 section.about p{
-    font-family: 'Lato', sans-serif;
-    color:var(--ternary);
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Times New Roman';
+    color: black;
+    /* color:var(--ternary); */
     line-height: 1.2;
     margin-bottom: 1rem;
 }
@@ -150,7 +154,8 @@ section.about .social a{
     -o-transition: all .3s ease;
 }
 section.about .social a:hover{
-    background:var(--primary);
+    /* background:var(--primary); */
+    background-color: rgb(207, 200, 200);
 }
 section.about .social a img{
     width:100%;
@@ -295,6 +300,38 @@ section.reviews .slider-dots button{
     -o-border-radius:50px;
     cursor: pointer;
 }
+
+#text{
+    display:none;
+  }
+  
+  a#toggle {
+    color:#2095cf;
+    margin:10px 0px 10px 0px;
+    display:block;
+  }  
+
+  #text-1{
+    display:none;
+  }
+  
+  a#toggle-1 {
+    color:#2095cf;
+    margin:10px 0px 10px 0px;
+    display:block;
+  } 
+
+
+  #text-2{
+    display:none;
+  }
+  
+  a#toggle-2 {
+    color:#2095cf;
+    margin:10px 0px 10px 0px;
+    display:block;
+  } 
+
 section.reviews .dots li.slick-active button{
     background:var(--primary);
     width:20px;
@@ -374,7 +411,7 @@ section.blog .card-wrapper .card .img-wrapper img{
 }
 section.blog .card-wrapper .card{
     background:var(--pure);
-    
+
 }
 section.blog .card-wrapper .card .card-content{
     padding:1rem;
@@ -416,39 +453,58 @@ section.blog .card-wrapper .card .card-content a.read-more{
 section.contact .card-wrapper{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap:3rem;
+    grid-gap:0.5rem;
 
 }
 section.contact .card-wrapper .card{
     text-align: center;
 }
+/* section.contact .card-wrapper .card-2{
+    text-align: center;
+    
+}
+
+section.contact .card-wrapper .card-3{
+    text-align: center;
+} */
 section.contact .card-wrapper .card img{
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
 }
 section.contact .card-wrapper .card h1{
     font-weight:400;
-    margin-bottom:1rem;
+    height: 0.5rem;
+    
+    /* margin-bottom:1rem; */
 }
 section.contact .card-wrapper .card h6{
     font-size:1rem;
     color:(--ternary);
     font-weight:400;
-    margin-bottom:4rem;
+    margin-bottom:1rem;
+    
 }
 section.contact .input-wrap{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap:2rem;
-    margin-bottom:2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:3rem;
+    margin-top:2rem;
+    margin-bottom:1rem;
+    align-items: center;
+
+    /* margin-left:5rem; */
 }
 section.contact .input-wrap-2{
     display: flex;
+    grid-template-columns: repeat(6, 1fr);
     flex-direction: column;
+    /* margin-left:5rem; */
 }
 section.contact .input-wrap-2 input{
     margin-bottom:2rem;
-    
-    
+    grid-template-columns: repeat(1, 1fr);
+    /* margin-left:5rem; */
+
+
 }
 
 section.contact input{
@@ -472,7 +528,7 @@ section.contact input:focus{
 section.contact .btn-wrapper{
     text-align: center;
     margin-top:2rem;
-    
+
 }
 footer{
     background:var(--dark);
@@ -482,16 +538,16 @@ footer{
 
 }
 footer .footer-logo{
-    margin-bottom:3rem;
-    width:180px
+    margin-bottom:0.5rem;
+    width:100px
 
 }
 footer .footer-socials a{
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 footer .footer-socials a img{
-    width:65px;
-    height:65px;
+    width:3rem;
+    height:3rem;
     padding:0.2rem;
 }
 
@@ -526,8 +582,9 @@ footer .copyright{
     top:0;
     left:0;
     z-index:1001;
-    background: var(--light);
-    width:100%;
+    background-color: black;
+    /* background: var(--light); */
+    width:10%;
     height:100%;
     padding:2rem;
     padding-top:5rem;
@@ -553,11 +610,12 @@ footer .copyright{
 .times{
     position:fixed;
     top:30px;
-    right:30px;
+    right:10px;
     border:none;
     background:none;
     outline:none;
     cursor:pointer;
+     background-color: black;
 
 
 }
@@ -568,13 +626,14 @@ footer .copyright{
     list-style-type:none;
 }
 .mobile-nav ul li a{
-    color:var(--secondary);
+    color:white;
+    /* color:var(--secondary); */
     text-decoration:none;
-    font-size:2rem;
+    font-size:0.8rem;
 }
 @media (max-width:1024px){
     header #main-nav{
-        display:none; 
+        display:none;
     }
     .hero .left img{
         width:100px;
@@ -602,7 +661,7 @@ footer .copyright{
     section.about .about-me-img{
         height: 9rem;
         width: 8rem;
-        
+
     }
     section.services .card-wrapper{
         grid-template-columns: repeat(2, 1fr);
@@ -631,12 +690,12 @@ footer .copyright{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
     }
-    
+
 
     section.blog{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
     }
-    
+
 }
 
 @media(max-width:576px){
@@ -646,7 +705,7 @@ footer .copyright{
     header{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
     }
-    
+
     .hero .right{
         position: absolute;
         top:12.6rem;
@@ -670,7 +729,7 @@ footer .copyright{
     }
 
     section{
-        padding:1rem 0; 
+        padding:1rem 0;
     }
 
     section.services .card-wrapper{
@@ -704,20 +763,20 @@ footer .copyright{
 
     section.about .social a img {
         width: 70%;
-        height: 70%;   
+        height: 70%;
     }
     section.freelancer h1 {
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
     }
 
-    
 
-    
-    
+
+
+
     section.freelancer h1{
         line-height:1.2;
-        
+
     }
     section.freelancer{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
@@ -732,7 +791,7 @@ footer .copyright{
     .section-heading + p {
         margin-bottom: 2rem;
     }
-    
+
     section.contact .card-wrapper{
         grid-template-columns: repeat(1,1fr);
     }
@@ -755,7 +814,12 @@ footer .copyright{
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 1rem;
+        
     }
+
+
+
+     
 
     section.blog .card-wrapper .card .card-content h1 {
         font-size: 0.9rem;
@@ -763,7 +827,7 @@ footer .copyright{
     }
     section.blog .card-wrapper .card .card-content span {
         font-size: 0.7rem;
-        
+
     }
     section.blog .card-wrapper .card .card-content p {
         margin-top: 0rem;
@@ -810,7 +874,7 @@ footer .copyright{
     footer .footer-socials a img {
         width: 28px;
         height: 28px;
-        padding: 0.2rem;    
+        padding: 0.2rem;
     }
 
     footer .copyright {
@@ -828,5 +892,5 @@ footer .copyright{
     section.services .card-wrapper {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 5rem;
-    }   
+    }
 }
